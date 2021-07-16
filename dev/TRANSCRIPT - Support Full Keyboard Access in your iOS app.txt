@@ -1,0 +1,150 @@
+ ♪ Bass music playing ♪ ♪ Sommer Panage: Hi, my name is Sommer Panage.
+I'm excited to talk to you today about Full Keyboard Access on iOS.
+Full Keyboard Access is a feature for our customers with motor impairments.
+So to begin today, I'll be giving you a quick overview of motor accessibility in general on iOS.
+After that, we'll take a closer look at Full Keyboard Access and all the power it brings users, particularly on iPad.
+And finally, we'll dive into key APIs and principles that you as a developer should be sure to keep in mind as you build your applications to be certain that they support keyboard users.
+Now, let's get started with a review of motor accessibility.
+When we discuss developing accessible apps for iOS, we want to keep all users in mind.
+We often talk about accessibility in terms of VoiceOver, a technology for those who are blind or low vision.
+However, it's important to also make sure our software works for anyone with motor impairments as well.
+Motor impairment is a wide-ranging term and can impact how someone uses their iOS device in many ways.
+Some people may have a limited range of motion.
+Others may have finer motor impairments such as tremors or other difficulties touching the screen.
+And depending on the severity of the motor impairment, many people find it easier or even necessary to interact with their devices via external hardware such as keyboards, joysticks, or buttons.
+iOS provides numerous assistive technologies to help those with motor impairments have a seamless experience with their devices.
+For example, we offer AssistiveTouch for people who might have some difficulty with hardware interactions or Multi-Touch gestures.
+AssistiveTouch uses an onscreen menu to simplify these interactions down to simple single taps.
+Switch Control allows those with more limited motor abilities to interact with their iOS devices using one or more external switches or buttons.
+And of course, there's also Voice Control, which allows people to interact with their iOS devices using only their voice.
+And that brings us to one of our newest motor technologies, Full Keyboard Access.
+While iOS has offered support for keyboards since iOS 9, it's been a supplementary mode of input.
+With Full Keyboard Access, released in iOS 13.
+4.
+1, customers can now interact with their device 100 percent via the keyboard.
+It's a middle ground between AssistiveTouch and Switch Control for those who may not have enough dexterity to touch their screens but who also do not necessarily need or want to use external switches.
+It also offers an alternative to Voice Control for those who may be nonverbal, have a speech impairment, or who simply might be in an environment where using Voice Control doesn't make sense.
+Full Keyboard Access is also great for those who depend on custom or accessible keyboard layouts such as a one-handed keyboard or this ergonomic split keyboard here.
+In order for Full Keyboard Access to offer people a true iOS experience without the touchscreen, it provides numerous additions to basic keyboard input.
+Full Keyboard Access also has navigation commands so that users can get to every single element onscreen, interaction commands, and a Gesture mode for things like drag and drop.
+And all of these commands use Tab as the modifier key.
+However, they're also fully customizable for people who may prefer different key combos.
+So let's take a look at how a user might navigate on their iPad using Full Keyboard Access.
+So first, I can use the arrow keys to move to the Notes app and Space bar to activate.
+From there, I can Tab over to create a new note and then I can immediately edit.
+I think I'm going to take some notes about version two from one of my apps called Shape Shuffle.
+ Let's make it great for iPad.
+ When I'm done editing, I can use Control-Tab to get out of editing mode.
+Now if I want to delete an old note, I can use Tab-Z to bring up a list of actions.
+Then I can use arrow and Space to delete the note.
+Now, let's say I want to make one more new note.
+Well, I could Tab over to the Create Note button again, or I could use the Find feature by using Tab-F.
+Then I just type in "new", and there we go.
+So now that you know all about Full Keyboard Access and how it's used, it's time to look into how you, as an app developer, can make sure that keyboard users have the best possible experience.
+In 2020, I talked with you about Switch Control, and we worked on this fun game for kids to learn their shapes, colors, and numbers.
+Together, we made this app accessible.
+This year, I decided to rev Shape Shuffle for iPad so that we can make sure that it works great with Full Keyboard Access.
+If you haven't seen Shape Shuffle yet, no worries.
+Here's a quick tour.
+In each level, the player gets a prompt like the one we see here: Two Yellow Squares.
+Then they have to tap through the cards below to try to find the three required cards; in this case, a card with two objects, a square card, and a yellow card.
+Once they've double-tapped each correct card, they can move on to the next level.
+And as the levels go up, the prompts get harder.
+It looks like I just found two, so I can double-tap to add it to my board and continue searching for yellow and square.
+Now, if I'm not sure if the card is the right one or not, I can put a pin in it by long-pressing it so I know to come back later.
+I'll put a pin in these two in the bottom left.
+Then, when I return, I can make my final pick and beat the level.
+Hm.
+.
+.
+ I got it! Now let's start with our gameplay view to see how things work when I play another round but this time via my keyboard.
+So as I hit Tab and Space bar, things seem to be working well.
+I can move between cards with Tab and flip them with Space.
+Now let's try to add or pin our triangle card.
+I'll hit Tab-Z to bring up my Actions menu, but I'm not seeing any actions available.
+Now, there are actually two ways we can address helping users to quickly get to common actions in our game, like add and pin.
+The first way we can solve this is via a custom action.
+Custom actions are great because they translate across many assistive technologies.
+When you add custom actions to something, it will show up in VoiceOver, Switch Control, and Full Keyboard Access.
+Custom actions are what show up when you hit Tab-Z.
+As you can see here, all I need to do is create a UIAccessibilityCustomAction for the actions I want to add, then go ahead and set those to my accessibilityCustomActions array on my cardView.
+Also, it's always great to add an image.
+While these images won't show up for Full Keyboard Access, they will show up for Switch Control.
+Here's what my UI looks like with custom actions added.
+When I press Tab-Z, I see this nice popover letting me add the card or pin it.
+Custom actions are great for anyone using our accessibility features; however, there's another really cool approach that you can take here.
+You can add a custom keyboard shortcut.
+The nice thing with a custom keyboard shortcut is that it will work for both your Full Keyboard Access users as well as for those who are just using a keyboard with their device, but they don't have Full Keyboard Access turned on.
+It's great for accessibility and power users alike.
+To see a list of keyboard shortcuts, you just need to hold down the Command key.
+You can learn all about keyboard shortcuts and much more for iPad in our talk this year, "Take your iPad apps to the next level.
+" Today, I'll show you a short example of how you can harness this API which was new in Mac Catalyst 13 and now brought to iOS and iPadOS 15.
+By overriding buildMenu in your AppDelegate, you can set your key commands Here I create two UIKeyCommands; one for my add action and one for my pin action.
+I make sure to add a discoverability title as that's what will show up in my KeyCommand HUD when I hold down Command.
+Next, I create a new UI menu, which I name "gameplay", and I pass the new commands as "children".
+Finally, I insert the menu into my menu builder, and I'm done! Now, since I only want these items to be active in the HUD when I actually have a selected card, I also override canPerformAction on my GameViewController so that I only show these items when a card is actually selected.
+Here's what our game looks like when I hold down the Command key, and I have a card selected.
+And here, I want to highlight a key principle of developing for Full Keyboard Access.
+You should try to add custom actions and keyboard shortcuts to all of your common actions to improve efficiency for your users.
+Not only are they both easily discoverable, but they improve the experience for anyone interacting with your app via a keyboard.
+Let's come back to our game.
+I've added the triangle with my new actions.
+Now I'll use Shift-Tab to go back toward the home button.
+However, as I'm doing that, I see another issue.
+That triangle is selectable even though when I tap on it with Space bar nothing happens.
+So first of all, why is our cursor going to this element if we can't interact with it? Well, I've already done some VoiceOver support work on this app, and here's what that looks like.
+You'll see that I'm setting isAccessibilityElement to true on my items as well as giving it an accessibilityLabel.
+This is great because VoiceOver needs to read each item to our user.
+However, if someone is a Full Keyboard Access user only, then their cursor will also go to many items marked with isAccessibilityElement.
+In order to tell Full Keyboard Access to skip this element, we need to add one more line.
+Here, you can see that we set accessibilityResponds ToUserInteraction to false.
+This tells our system that while this is an accessibility element, it's not one that the user can interact with.
+So the cursor for motor technologies such as Full Keyboard Access or Switch Control should skip it.
+Note that accessibility RespondsToUserInteraction is only meaningful if isAccessibilityElement is already true.
+By default, the system tries to correctly set elements with isAccessibilityElement true to interactive or not.
+In most cases you'll only need to set accessibilityResponds ToUserInteraction to false when you have an object that you want to be accessible to VoiceOver but not to Full Keyboard Access or other motor technologies.
+This brings us to a second key principle of developing for Full Keyboard Access.
+As you're testing your app, you'll want to be sure that the cursor only goes to items that the user can interact with.
+Now, as you're building your app and making sure focus only goes to the right places, it might be tempting to override canBecomeFocused instead of the API that we just discussed.
+However, this overrides focus behavior for the whole focus engine and will impact people using Tab to navigate when Full Keyboard Access isn't even on.
+So it's best to steer clear of this when only wanting to modify behavior for Full Keyboard Access users.
+In fact, this brings up an important area.
+The focus system that's used to drive Full Keyboard Access is the same one that drives Tab navigation across all of our OSs like iPadOS.
+While you likely won't need to touch it in order to work with Full Keyboard Access, if you'd like to learn more, I recommend these three talks.
+This year we have two other talks called "Focus on iPad keyboard navigation" and "Direct and reflect focus in SwiftUI.
+" And back in 2017, there's a fantastic talk all about how the focus engine drives tvOS.
+Now, coming back to our home screen, I want to be sure that I can use Full Keyboard Access's awesome Find feature.
+So let's give it a try.
+OK, the number levels work great out of the box.
+Searching for levels eight and twelve is easy.
+And because I've already added some VoiceOver support, I'm getting the Settings button, too, with Find.
+But what happens if I don't know that the button is called Settings? Maybe I type in "preferences" or "prefs.
+" Hm.
+ No luck.
+To solve this, we can set an array of strings to our accessibilityUserInputLabels.
+Here, I'm setting the localized words for prefs, preferences, gear, and settings to this label to be sure that people can reach it no matter what they might type.
+By adding these strings, you'll also be doing a favor to your Voice Control users, as they can now speak any of these names to tap your Settings button as well.
+Of course, this won't interfere with your VoiceOver label.
+So now when you type in "prefs" it works great! And this brings me to our third and final principle today.
+Make sure that you always provide as many labels as you can for your image-based controls so your users can always get to them quickly with Find.
+Now, before we finish up, I want to do a little fun polish.
+So let's take one more look at my home screen.
+Since all these items are UI buttons, Tab is moving to them naturally.
+And that's great.
+But notice how my cursor is always a rectangle? To make things more playful, let's make it match the shapes of the buttons.
+To show nice cursor shapes around our buttons, we can just use accessibilityPath -- the same accessibilityPath, in fact, that you'd use for VoiceOver.
+For static views, you can set the accessibilityPath to that of the shape itself with a UIBezierPath.
+Notice that I'm setting the accessibilityPath in screen coordinates.
+If you're in a scroll view, you'll want to override accessibilityPath so it's always correct relative to screen coordinates, even when you're scrolling.
+Let's take a look at how fun this bit of polish looks.
+Now as I Tab through, we can see circles, triangles, and squares.
+And it'll be the same with VoiceOver as well.
+With that, let's review some of the key ideas to keep in mind when you're developing your app for keyboards, but particularly, for Full Keyboard Access.
+First, use custom actions and keyboard shortcuts to really go that extra mile, adding efficient means to navigate your apps.
+Next, make sure the cursor doesn't land on items that the user cannot actually interact with.
+And finally, be sure that you add user input labels, especially on image-based controls, so that people can take full advantage of Full Keyboard Access's Find feature.
+And that's everything! I hope that today you now understand the importance of motor accessibility in all of Apple's products.
+While there are numerous ways of interacting with our devices, the keyboard has become a powerful tool for our users.
+With the information from this talk, you should now be able to be certain your apps provide an excellent experience to Full Keyboard Access users and to everyone.
+Thank you and have an amazing WWDC 2021.
+♪
