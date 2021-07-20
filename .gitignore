@@ -15,3 +15,5 @@ _book
 *.mobi
 *.pdf
 desktop.ini
+config.yaml
+hokus.yaml
