@@ -65,6 +65,10 @@ Go to Settings ⏏︎ > General > Keyboard > Hardware Keyboard, then do any of t
 
 *Last updated* `1627066846`
 
+
+
+<script src="https://gist.github.com/extratone/78d7b88d32fd7714b41994c9189ae9e1.js"></script>
+
 ***
 
 ## Links
