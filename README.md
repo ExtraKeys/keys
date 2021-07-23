@@ -91,4 +91,3 @@ Go to Settings ⏏︎ > General > Keyboard > Hardware Keyboard, then do any of t
 * His [**Titler tool**](https://brettterpstra.com/projects/titler/) for automatically fetching the wee bit of meta required to manifest formatted Markdown hyperlinks with a single action.
 
 https://brettterpstra.com/projects/markdown-service-tools/
-
