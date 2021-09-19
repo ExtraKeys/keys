@@ -16,3 +16,9 @@ I don’t think it would be unreasonable to describe the first-generation iPhone
 -[@joethephish](https://twitter.com/joethephish/status/1418668594041339909)
 
 From a certain perspective - namely, the one from which I wrote this volume - the idea of the smartphone in its most abstract form is inextricably linked with the equally abstract idea of a physical keyboard. While Apple hardly acknowledges the iPhone’s support for Bluetooth keyboard inputs in any public or developer-facing documents, it is also *actively developing* within said support as I write this. I can declare with all but 100% certainty that we’ll never see any promotional media from Apple depicting a human typing to an iPhone on a physical keyboard or even a spy shot of an Apple executive doing so in the wild.
+
+I thought it might be helpfully explanatory to include the full text of a thread I started on the Apple Developer Forums around mid-July, 2021 (I would just cite the specific date, but Apple's forum software uses relative timestamps, exclusively) entitled "Complete documentation for native Bluetooth Keyboard support/shortcuts on **iPhone**?:"
+
+[[Complete documentation for native …  Apple Developer Forums]]
+
+
