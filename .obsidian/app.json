@@ -1,5 +1,6 @@
 {
   "spellcheck": true,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "media"
+  "attachmentFolderPath": "media",
+  "promptDelete": false
 }
