@@ -1,3 +1,5 @@
 {
-  "spellcheck": true
+  "spellcheck": true,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "media"
 }

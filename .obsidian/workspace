@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "a27826c7f7bc32d0",
+        "id": "d0a852fd05f37391",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "book/Preface.md",
+            "file": "shortcuts/Mastodon for iOS Bluetooth Keyboard Shortcuts.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 162.00000190734863
   },
   "right": {
     "id": "475befac0c6a4e90",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book/Preface.md",
+                "file": "shortcuts/Mastodon for iOS Bluetooth Keyboard Shortcuts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -78,16 +78,37 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "7f355f6e9c24970e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "3c787c3295c04d86",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 100
   },
-  "active": "a27826c7f7bc32d0",
+  "active": "d0a852fd05f37391",
   "lastOpenFiles": [
-    "book/Preface.md"
+    "shortcuts/Mastodon for iOS Bluetooth Keyboard Shortcuts.md",
+    "Untitled.md",
+    "shortcuts/VoiceMemos.md",
+    "book/Preface.md",
+    "KeysCover.jpg",
+    "CODE_OF_CONDUCT.md"
   ]
 }

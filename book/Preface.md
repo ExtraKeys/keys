@@ -21,4 +21,4 @@ I thought it might be helpfully explanatory to include the full text of a thread
 
 [[Complete documentation for native …  Apple Developer Forums]]
 
-
+A lot to process, yes, but it's here because I really do find it very telling.
