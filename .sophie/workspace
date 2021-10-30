@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "cf9f31f2fc4afaed",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6c2b4f79c0e49e1",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eaaf6ed8875ccbc5",
+    "type": "split",
+    "children": [
+      {
+        "id": "a774cce0165e6179",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8525fb2ccc87e9a7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "29943dd4edf5e0e4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0a31c02ce05a2642",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "95d8f65e5f3f78da",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "8481ae0a93858aa5",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.5136413574219
+  },
+  "right": {
+    "id": "ede937ddfac9f863",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a35322e00c82611",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5edc6dd332d2fe00",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "326397920c54bd0e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "4499de9cfe87a736",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "4ebfc0f906a626a9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8cf7366e5b398bed",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "7b25cea2c3e0f1c3",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 270.94097900390625,
+    "collapsed": true
+  },
+  "active": "d6c2b4f79c0e49e1",
+  "lastOpenFiles": [
+    "pages/About.md",
+    "raindrop/Blessed Web Utilities.md",
+    "notes/Regarding Obsidian's Audio Recording Plugin.md",
+    "media/Recording 20211029204626.webm",
+    "notes/iP12PM/Face ID vs. Touch ID.md",
+    "Recording 20211029195446.webm",
+    "media/DraftsAudioTest.m4a",
+    "drafts/documentation.md",
+    "drafts/documentation/Drafts Keyboard Shortcuts.md",
+    "curation/NotionLibrary.csv"
+  ]
+}
