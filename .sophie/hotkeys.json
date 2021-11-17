@@ -365,5 +365,23 @@
       "key": "M"
     }
   ],
-  "hotkeysplus-obsidian:better-toggle-todo": []
+  "hotkeysplus-obsidian:better-toggle-todo": [],
+  "todoist-sync-plugin:todoist-refresh-metadata": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "homepage:open-homepage": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "H"
+    }
+  ],
+  "wikilinks-to-mdlinks-obsidian:toggle-wiki-md-links": []
 }

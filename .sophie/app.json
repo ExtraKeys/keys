@@ -5,5 +5,7 @@
   "attachmentFolderPath": "media",
   "newFileLocation": "folder",
   "newFileFolderPath": "notes",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "trashOption": "local",
+  "fileSortOrder": "byModifiedTime"
 }

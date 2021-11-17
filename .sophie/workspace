@@ -1,14 +1,25 @@
 {
   "main": {
-    "id": "add2051c936a0880",
+    "id": "74ff81c3797cbce9",
     "type": "split",
     "children": [
       {
-        "id": "1007f39020d528c3",
+        "id": "9547622031e5e91d",
         "type": "leaf",
         "state": {
           "type": "empty",
           "state": {}
+        }
+      },
+      {
+        "id": "79cd50c8e06afa77",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Instrument Panel.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -54,7 +65,7 @@
             }
           },
           {
-            "id": "95d8f65e5f3f78da",
+            "id": "f55676656939e2da",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -62,7 +73,7 @@
             }
           },
           {
-            "id": "8481ae0a93858aa5",
+            "id": "d967ef2a48267af5",
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
@@ -74,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5136413574219
+    "width": 189,
+    "collapsed": true
   },
   "right": {
     "id": "ede937ddfac9f863",
@@ -101,6 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Instrument Panel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +129,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Instrument Panel.md"
+              }
             }
           },
           {
@@ -125,13 +140,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Instrument Panel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "8cf7366e5b398bed",
+            "id": "0fdc00d13646fff5",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
@@ -139,32 +155,31 @@
             }
           },
           {
-            "id": "7b25cea2c3e0f1c3",
+            "id": "7e16f0f441a94952",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 270.94097900390625,
+    "width": 118,
     "collapsed": true
   },
-  "active": "1007f39020d528c3",
+  "active": "79cd50c8e06afa77",
   "lastOpenFiles": [
-    "pages/About.md",
-    "raindrop/Blessed Web Utilities.md",
-    "notes/Regarding Obsidian's Audio Recording Plugin.md",
-    "media/Recording 20211029204626.webm",
-    "notes/iP12PM/Face ID vs. Touch ID.md",
-    "Recording 20211029195446.webm",
-    "media/DraftsAudioTest.m4a",
-    "drafts/documentation.md",
-    "drafts/documentation/Drafts Keyboard Shortcuts.md",
-    "curation/NotionLibrary.csv"
+    "Instrument Panel.md",
+    "correspondence/GitHub Feedback - Future of GitHub Wikis.md",
+    "social/1Password-1Password 8 for Windows is here! 😍 All-new design🌗 Dark mode👩‍💻 Productivity boosters🔐 Top-notch security, and so much moreGet started httpst.coXgE2jgaO44 httpst.coMKZVmhMB5C.md",
+    "notes/Notes-1Password 8.md",
+    "video/1Password8TwitterVideo.mp4",
+    "notes/Notes-Twitter Blue Review.md",
+    "notes/Futureland - 1.md",
+    "social/NeoYokel-Watching Jimmy!.md",
+    "$/Pitch - Social Media Consultation.md",
+    "drafts/Min Browser Review.md"
   ]
 }
