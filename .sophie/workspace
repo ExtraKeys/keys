@@ -1,10 +1,10 @@
 {
   "main": {
-    "id": "cf9f31f2fc4afaed",
+    "id": "add2051c936a0880",
     "type": "split",
     "children": [
       {
-        "id": "d6c2b4f79c0e49e1",
+        "id": "1007f39020d528c3",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -154,7 +154,7 @@
     "width": 270.94097900390625,
     "collapsed": true
   },
-  "active": "d6c2b4f79c0e49e1",
+  "active": "1007f39020d528c3",
   "lastOpenFiles": [
     "pages/About.md",
     "raindrop/Blessed Web Utilities.md",
