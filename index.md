@@ -16,36 +16,32 @@ In fact, here is the entirety of what the current version of Apple's iPhone User
 
 <script src="https://gist.github.com/extratone/78d7b88d32fd7714b41994c9189ae9e1.js"></script>
 
-***
+---
 
 <img src="https://i.snap.as/JGzmvA2E.jpg" alt="iPhone and COMPAQ Portable" style="zoom:50%;" />
 
 ## Links
 
-* [The GitHub Org](https://github.com/ExtraKeys)
-
-* [**The Main Repository**](https://github.com/ExtraKeys/keys)
-
-* [Twitter](https://twitter.com/UIKeyCommand)
-
-* [Subreddit](https://www.reddit.com/r/UIKeyCommand/)
-
-* [Mastodon](https://mastodon.online/@keys)
+- [The GitHub Org](https://github.com/ExtraKeys)
+- [**The Main Repository**](https://github.com/ExtraKeys/keys)
+- [Twitter](https://twitter.com/UIKeyCommand)
+- [Subreddit](https://www.reddit.com/r/UIKeyCommand/)
+- [Mastodon](https://mastodon.online/@keys)
 
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">right back at ya, Federico! <br><br>I can’t tell ya how much this acknowledgement means to myself and others who use Bluetooth keyboards with our iPhones (every day in my case!) <br><br>also appreciate Obsidian extending full support to the iPhone… an example I hope other devs will follow. <a href="https://t.co/qEjXz9YNEr">pic.twitter.com/qEjXz9YNEr</a></p>&mdash; ※ David Blue ※ (@NeoYokel) <a href="https://twitter.com/NeoYokel/status/1418622923473047557?ref_src=twsrc%5Etfw">July 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-***
+---
 
 # Resources
 
 ## Brett Terstra
 
-* [iTextEditors](https://brettterpstra.com/ios-text-editors) - *The* definitive list of text manipulation software on iOS.
-* See [this topic on his website](https://brettterpstra.com/topic/keyboard/) for editorial work.
-* His [Grablinks bookmarklet](https://brettterpstra.com/projects/grablinks/) was very much ahead of its time in 2014. Unfortunately it doesn't appear to be reliably functioning at the moment, but I promise to work on it soon. 
+- [iTextEditors](https://brettterpstra.com/ios-text-editors) - *The* definitive list of text manipulation software on iOS.
+- See [this topic on his website](https://brettterpstra.com/topic/keyboard/) for editorial work.
+- His [Grablinks bookmarklet](https://brettterpstra.com/projects/grablinks/) was very much ahead of its time in 2014. Unfortunately it doesn't appear to be reliably functioning at the moment, but I promise to work on it soon. 
 
 <script src="https://gist.github.com/ttscoff/5834741.js"></script>
 
 [WWDC Transcripts Repo](https://github.com/extratone/wwdc)
 
-* His [**Titler tool**](https://brettterpstra.com/projects/titler/) for automatically fetching the wee bit of meta required to manifest formatted Markdown hyperlinks with a single action.
+- His [**Titler tool**](https://brettterpstra.com/projects/titler/) for automatically fetching the wee bit of meta required to manifest formatted Markdown hyperlinks with a single action.
