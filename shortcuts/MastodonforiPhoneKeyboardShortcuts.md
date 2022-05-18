@@ -1,7 +1,12 @@
 # Mastodon for iOS Keyboard Shortcuts
 - [GitHub Issue](https://github.com/extratone/mastodon-ios-apps/issues/3)
+- [Gist](https://gist.github.com/extratone/6d28fb175af592e9135955b0ff2ba576)
 
 ![Mastodon Universal Clacker Award](https://github.com/extratone/upgit/blob/main/images/954E27CC-F768-45A3-AE74-336A39B60C30.PNG?raw=true)
+
+*Updated as of [release version 1.4.1](https://github.com/mastodon/mastodon-ios/commit/e4c38c70e29ea873b77312436845ddd7fc0ca7dd).* - `05182022-123850`
+
+*Please note that the list below includes view-dependent commands.*
 
 | **Action**                                    | **Command** |
 |:-----------------------------------------:|:-------:|
@@ -38,3 +43,7 @@
 | Paste                                     | ⌘ V     |
 | Paste and Match Style                     | ⌥ ⇧ ⌘ V |
 | Select All                                | ⌘ A     |
+
+---
+
+<script src="https://gist.github.com/extratone/6d28fb175af592e9135955b0ff2ba576.js"></script>
