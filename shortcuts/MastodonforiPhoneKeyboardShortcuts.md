@@ -1,6 +1,7 @@
 # Mastodon for iOS Keyboard Shortcuts
 - [GitHub Issue](https://github.com/extratone/mastodon-ios-apps/issues/3)
 - [Gist](https://gist.github.com/extratone/6d28fb175af592e9135955b0ff2ba576)
+- [Keys Wiki](https://github.com/ExtraKeys/keys/wiki/Mastodon-for-iPhone-Keyboard-Shortcuts)
 
 ![Mastodon Universal Clacker Award](https://github.com/extratone/upgit/blob/main/images/954E27CC-F768-45A3-AE74-336A39B60C30.PNG?raw=true)
 
