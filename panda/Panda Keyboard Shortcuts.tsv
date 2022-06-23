@@ -1,0 +1,28 @@
+Action	Command
+Toggle Bold	⌘ B
+Toggle Italic	⌘ I
+Toggle Strikethrough	⇧ ⌘ U
+Toggle Underline	⌘ U
+Toggle Code	⌥ ⌘ C
+Toggle Highlighter	⇧ ⌘ M
+Toggle H1	⌘ 1
+Toggle H2	⌘ 2
+Toggle H3	⌘ 3
+Toggle H4	⌘ 4
+Toggle H5	⌘ 5
+Toggle H6	⌘ 6
+Toggle Unordered List	⌘ L
+Toggle Task	⌘ T
+Toggle Ordered List	⇧ ⌘ L
+Toggle Block Quote	⇧ ⌘ T
+Toggle Code Block	^ ⌘ C
+Insert Footnote	⇧ ⌘ E
+Insert Table	⌥ ⌘ T
+Insert Link	⌘ K
+Toggle Folding	⌘ '
+Move Paragraph Up	⌥ ⌘ ⇧
+Show Search Panel	⌘ F
+Show Search & Replace Panel	⌥ ⌘ F
+Show Search Panel From Current Selection	⌘ E
+Find Next Search Result	⌘ G
+Find Previous Search Result	⇧ ⌘ G
