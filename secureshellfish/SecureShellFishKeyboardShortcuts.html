@@ -1,0 +1,803 @@
+<style> .hljs { white-space: pre-wrap !important; word-wrap: break-word !important; } </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <style>
+body {
+  background-color: #ffffff;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  -webkit-transform: translate(0px) scale(1.15);
+  transform: translate(0px) scale(1.15);
+}
+
+select:focus {
+  outline: none !important;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #007AFF;
+  text-decoration: underline;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body code {
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+  background: #f9f9f9;
+  padding: 0.5em 10px;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body blockquote:before {
+  margin-right: 0.25em;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 14px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: 0.875em;
+}
+
+.markdown-body h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: 0.25em;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+  background-color: #f6f8fa;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body :not(pre)>code {
+  padding: 0.14em 0.3em;
+  margin: 0;
+  font-size: 85%;
+  vertical-align: 5%;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dfe2e5;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  border-radius: 4px;
+  border: thin solid #e0e0e0;
+}
+
+.markdown-body pre code {
+  max-width: auto;
+  padding: 16px;
+  margin: 0;
+  line-height: inherit;
+  word-wrap: normal;
+  border-radius: 3px;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.2em 0.16em -1.25em;
+  vertical-align: middle;
+}
+
+.markdown-body .highlighter {
+  background-color: rgba(255, 255, 0, 0.8);
+}
+
+.no-file-access {
+  color: red !important;
+  text-decoration: none !important;
+}
+
+.syntax-picker {
+  margin-left: -4px;
+  margin-bottom: 8px;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.syntax-picker::-webkit-scrollbar { 
+  display: none;
+}
+
+.syntax-light-theme-picker {
+  display: inline;
+}
+
+.syntax-dark-theme-picker {
+  display: none;
+}
+
+.toc-item {
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #eaecef;
+}
+
+.toc-item > a {
+  color: #24292e !important;
+  text-decoration: none !important;
+}
+
+.toc-level-1, .toc-level-2, .toc-level-3 {
+  font-weight: 500;
+}
+
+.toc-level-1 {
+  font-size: 19px;
+}
+
+.toc-level-2 {
+  font-size: 18px;
+}
+
+.toc-level-3 {
+  font-size: 17px;
+}
+
+.toc-level-4, .toc-level-5, .toc-level-6 {
+  font-size: 16px;
+}
+
+.embedded-file {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #dddddd;
+}
+</style>
+  
+  <style>
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 15px 45px;
+      font-family: "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.6;
+    }
+    @media (max-width: 767px) {
+      .markdown-body {
+        padding: 15px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .markdown-body {
+        transform: scale(1);
+        transform-origin: top center;
+      }
+    }
+    .sequence svg, .flowchart svg, .mermaid svg, .plantuml-svg {
+      background: white;
+      margin-bottom: 24px;
+      margin-right: 24px;
+      border-radius: 3px;
+    }
+    .plantuml-svg {
+      display: block;
+    }
+  </style>
+  
+  <script>
+    if (true) {
+      MathJax = {
+        loader: { load: ["[tex]/upgreek"] },
+        showProcessingMessages: false,
+        tex: {
+          packages: { "[+]": ["upgreek"] },
+          autoload: {
+            upgreek: [
+              'upalpha', 'upbeta', 'upchi', 'updelta', 'Updelta', 'upepsilon',
+              'upeta', 'upgamma', 'Upgamma', 'upiota', 'upkappa', 'uplambda',
+              'Uplambda', 'upmu', 'upnu', 'upomega', 'Upomega', 'upomicron',
+              'upphi', 'Upphi', 'uppi', 'Uppi', 'uppsi', 'Uppsi', 'uprho',
+              'upsigma', 'Upsigma', 'uptau', 'uptheta', 'Uptheta', 'upupsilon',
+              'Upupsilon', 'upvarepsilon', 'upvarphi', 'upvarpi', 'upvarrho',
+              'upvarsigma', 'upvartheta', 'upxi', 'Upxi', 'upzeta',
+            ]
+          },
+          inlineMath: [],
+          processEscapes: true
+        },
+        tex2jax: {
+          inlineMath: [],
+          processEscapes: true
+        },
+        svg: {
+          fontCache: "global"
+        }
+      };
+
+      const script = document.createElement("script");
+      script.src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.1/es5/tex-mml-chtml.min.js";
+      script.defer = true;
+      const anchor = document.getElementsByTagName("script")[0];
+      anchor.parentNode.insertBefore(script, anchor);
+    }
+  </script>
+</head>
+<body>
+  <article class="markdown-body"><p class="toc-list">
+  <span class="toc-item toc-level-1"><a href="#Secure%20ShellFish%20Keyboard%20Shortcuts">Secure ShellFish Keyboard Shortcuts</a></span><br>
+  <span class="toc-item toc-level-2">&nbsp;&nbsp;&nbsp;<a href="#Repository%20Files">Repository Files</a></span><br>
+  <span class="toc-item toc-level-2">&nbsp;&nbsp;&nbsp;<a href="#ShellFish">ShellFish</a></span><br>
+  <span class="toc-item toc-level-2">&nbsp;&nbsp;&nbsp;<a href="#Terminal">Terminal</a></span><br>
+  <span class="toc-item toc-level-2">&nbsp;&nbsp;&nbsp;<a href="#Edit">Edit</a></span><br>
+  <span class="toc-item toc-level-2">&nbsp;&nbsp;&nbsp;<a href="#Window">Window</a></span><br>
+</p>
+<h1 id="Secure%20ShellFish%20Keyboard%20Shortcuts">Secure ShellFish Keyboard Shortcuts</h1>
+<p>Updated <code>09252022-021221</code></p>
+<ul>
+<li><a href="https://www.icloud.com/numbers/0d7F3HzNgtf1I3-KW9K9Kqikw#Secure_ShellFish_Keyboard_Shortcuts"><strong>Shared Numbers Spreadsheet</strong></a></li>
+<li><a href="https://github.com/ExtraKeys/keys/issues/65">GitHub Issue</a></li>
+<li><a href="https://davidblue.wtf/drafts/8BF21061-FEBA-4FC9-96AE-C2D81E8C112D.html">WTF</a></li>
+<li><a href="shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/8BF21061-FEBA-4FC9-96AE-C2D81E8C112D.md">Local</a></li>
+<li><a href="https://apps.apple.com/us/app/ssh-client-secure-shellfish/id1336634154">App Store Share URL</a></li>
+<li><a href="https://gist.github.com/extratone/b3c79b8e6b6d13f6980d80f8415d0cd2">Gist</a></li>
+<li><a href="things:///show?id=8THyZUfzQ1uRZfDj1w5fco">Things</a></li>
+</ul>
+<p>Hardware (Bluetooth) keyboard shortcuts for <a href="https://apps.apple.com/us/app/ssh-client-secure-shellfish/id1336634154">Secure ShellFish  for iOS/iPadOS</a>.</p>
+<hr>
+<p><a href="https://apps.apple.com/us/app/ssh-client-secure-shellfish/id1336634154"><img src="https://user-images.githubusercontent.com/43663476/192132505-109c3c8b-7420-4650-8e17-8d6c1ea4e775.png" alt="Secure ShellFish Icon"></a></p>
+<script src="https://gist.github.com/extratone/b3c79b8e6b6d13f6980d80f8415d0cd2.js"></script>
+<h2 id="Repository%20Files">Repository Files</h2>
+<ul>
+<li><a href="https://github.com/ExtraKeys/keys/blob/main/secureshellfish/SecureShellFishKeyboardShortcuts.numbers">Numbers</a></li>
+<li><a href="https://github.com/ExtraKeys/keys/blob/main/secureshellfish/SecureShellFishKeyboardShortcuts.pdf">PDF</a></li>
+<li><a href="https://github.com/ExtraKeys/keys/blob/main/secureshellfish/SecureShellFishKeyboardShortcuts.csv">CSV</a></li>
+<li><a href="https://github.com/ExtraKeys/keys/blob/main/secureshellfish/SecureShellFishKeyboardShortcuts.xlsx">Excel</a></li>
+<li><a href="https://github.com/ExtraKeys/keys/blob/main/secureshellfish/SecureShellFishKeyboardShortcuts.tsv">TSV</a></li>
+</ul>
+<hr>
+<h2 id="ShellFish">ShellFish</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New Terminal</td>
+<td>⌘T</td>
+</tr>
+<tr>
+<td>Cancel</td>
+<td>⌘.</td>
+</tr>
+<tr>
+<td>Connect</td>
+<td>⏎</td>
+</tr>
+<tr>
+<td>Edit Server</td>
+<td>⤃</td>
+</tr>
+<tr>
+<td>Enable tmux</td>
+<td>⌥⌘T</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Terminal">Terminal</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quick Terminal</td>
+<td>⌥⌘N</td>
+</tr>
+<tr>
+<td>Close Terminal</td>
+<td>⌘W</td>
+</tr>
+<tr>
+<td>New Terminal</td>
+<td>⌘T</td>
+</tr>
+<tr>
+<td>Port Forwarding</td>
+<td>^⌘F</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Edit">Edit</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clear</td>
+<td>⌘K</td>
+</tr>
+<tr>
+<td>Insert Password</td>
+<td>⌘P</td>
+</tr>
+<tr>
+<td>Insert Snippet</td>
+<td>⌘S</td>
+</tr>
+<tr>
+<td>Hide Keyboard Bar</td>
+<td>⌘B</td>
+</tr>
+<tr>
+<td>Screen Copy</td>
+<td>⌥⇧⌘C</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>⌥⌘1</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>⌥⌘0</td>
+</tr>
+<tr>
+<td>Page Up</td>
+<td>⌥⌘⇧</td>
+</tr>
+<tr>
+<td>Page Down</td>
+<td>⌥⌘⇩</td>
+</tr>
+<tr>
+<td>Home</td>
+<td>⌥⌘⇦</td>
+</tr>
+<tr>
+<td>End</td>
+<td>⌥⌘⇨</td>
+</tr>
+<tr>
+<td>Larger Font</td>
+<td>⌘+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Window">Window</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hide Toolbar</td>
+<td>⌥⌘T</td>
+</tr>
+<tr>
+<td>Minimize</td>
+<td>⌘0</td>
+</tr>
+<tr>
+<td>Picture in Picture</td>
+<td>^⌘I</td>
+</tr>
+<tr>
+<td>Terminal Switching</td>
+<td>⌘(1-9)</td>
+</tr>
+</tbody>
+</table>
+</article>
+  
+  
+  
+  
+</body>
+<script>
+  // Translate vectors to <object> to properly use online fonts
+  const images = document.querySelectorAll("img");
+  images.forEach(image => {
+    const source = image.src;
+    if (source.includes("image/svg+xml") || source.toLowerCase().endsWith(".svg")) {
+      const object = document.createElement("object");
+      object.setAttribute("data", source);
+      image.parentNode.replaceChild(object, image);
+    }
+  });
+</script>
+</html>
