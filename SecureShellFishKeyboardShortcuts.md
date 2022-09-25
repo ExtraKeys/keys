@@ -1,0 +1,41 @@
+# Secure ShellFish Keyboard Shortcuts
+## ShellFish
+| Action       | Command |
+|--------------|---------|
+| New Terminal | ⌘T      |
+| Cancel       | ⌘.      |
+| Connect      | ⏎       |
+| Edit Server  | ⤃       |
+| Enable tmux  | ⌥⌘T     |
+
+## Terminal
+| Action          | Command |
+|-----------------|---------|
+| Quick Terminal  | ⌥⌘N     |
+| Close Terminal  | ⌘W      |
+| New Terminal    | ⌘T      |
+| Port Forwarding | ^⌘F     |
+
+## Edit
+| Action            | Command |
+|-------------------|---------|
+| Clear             | ⌘K      |
+| Insert Password   | ⌘P      |
+| Insert Snippet    | ⌘S      |
+| Hide Keyboard Bar | ⌘B      |
+| Screen Copy       | ⌥⇧⌘C    |
+| F1                | ⌥⌘1     |
+| F10               | ⌥⌘0     |
+| Page Up           | ⌥⌘⇧     |
+| Page Down         | ⌥⌘⇩     |
+| Home              | ⌥⌘⇦     |
+| End               | ⌥⌘⇨     |
+| Larger Font       | ⌘+      |
+
+## Window
+| Action             | Command |
+|--------------------|---------|
+| Hide Toolbar       | ⌥⌘T     |
+| Minimize           | ⌘0      |
+| Picture in Picture | ^⌘I     |
+| Terminal Switching | ⌘(1-9)  |

@@ -1,0 +1,33 @@
+Action,Command
+ShellFish,
+New Terminal,⌘T
+Cancel,⌘.
+Connect,⏎
+Edit Server,⤃
+Enable tmux,⌥⌘T
+,
+Terminal,
+Quick Terminal,⌥⌘N
+Close Terminal,⌘W
+New Terminal,⌘T
+Port Forwarding,^⌘F
+,
+Edit,
+Clear,⌘K
+Insert Password,⌘P
+Insert Snippet,⌘S
+Hide Keyboard Bar,⌘B
+Screen Copy,⌥⇧⌘C
+F1,⌥⌘1
+F10,⌥⌘0
+Page Up,⌥⌘⇧
+Page Down,⌥⌘⇩
+Home,⌥⌘⇦
+End,⌥⌘⇨
+Larger Font,⌘+
+,
+Window,
+Hide Toolbar,⌥⌘T
+Minimize,⌘0
+Picture in Picture,^⌘I
+Terminal Switching,⌘(1-9)
