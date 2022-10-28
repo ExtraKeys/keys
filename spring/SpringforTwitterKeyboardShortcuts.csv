@@ -1,0 +1,38 @@
+Action,Command
+File,
+New Tweet,⌘ N
+New Window,⇧ ⌘ N
+Open in New Window,^ ⌘ N
+Filter...,⇧ ⌘ F
+Find...,⌘ F
+Search,⌥ ⌘ F
+Refresh,⌘ R
+,
+View,
+Tabs 1-10,⌘ 1-10
+Tabs 11+,⌥ ⌘ 1...
+,
+Tweet,
+Like,L
+Share Link...,⌘ S
+Retweet...,T
+Reply...,R
+Add Bookmark,B
+Translate,G
+Select Text,X
+Open in Browser,⇧ ⌘ O
+Copy Text,C
+Mute...,⇧ ⌘ M
+View Links,⌘ L
+View Author,U
+View Original Tweet,Q
+View Media,M
+,
+Window,
+Back,⌘ [
+Forward,⌘ ]
+Up,W
+Down,S
+Back,A
+Forward,D
+Back,⌘ [
